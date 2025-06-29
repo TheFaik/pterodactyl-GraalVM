@@ -6,9 +6,9 @@
   FROM debian:bookworm-slim
 
   ARG TARGETPLATFORM
-  ARG JAVA_VERSION=25
+  ARG JAVA_VERSION=24
   
-  MAINTAINER TheFaik, <thefaikli@aol.com>
+  MAINTAINER Tommaso Benatti, <tommaso.benatti@outlook.com>
   
   ENV DEBIAN_FRONTEND=noninteractive
   
@@ -43,7 +43,7 @@
            "linux/amd64")  ARCH=x64  ;; \
            "linux/arm64")  ARCH=aarch64  ;; \
       esac \
-    && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-${JAVA_VERSION}.0.0-ea.28/graalvm-jdk-${JAVA_VERSION}.0.0-ea.28_linux-${ARCH}_bin.tar.gz\
+    && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://download.oracle.com/graalvm/${JAVA_VERSION}/latest/graalvm-jdk-${JAVA_VERSION}_linux-${ARCH}_bin.tar.gz \
     && mkdir -p /opt/java/graalvm \
     && tar -xf /tmp/graalvm.tar.gz -C /opt/java/graalvm --strip-components=1 \
     && rm -rf /var/lib/apt/lists/* \
@@ -63,4 +63,3 @@
   COPY        ./../entrypoint.sh /entrypoint.sh
   
   CMD         ["/bin/bash", "/entrypoint.sh"]
-  
