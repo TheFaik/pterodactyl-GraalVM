@@ -10,15 +10,16 @@ ___
 
 | Java | JDK                                        	     | Community Edition (CE)                             | Enterprise Edition (EE)         |
 |------|-----------------------------------------------------|----------------------------------------------------|---------------------------------|
-| 8    | ❌                                                  | `ghcr.io/tommasobenatti/pterodactyl-graalvm:CE-8`  | (Not available at the moment)  |
-| 11   | ❌                                                  | `ghcr.io/tommasobenatti/pterodactyl-graalvm:CE-11` | (Not available at the moment)  |
-| 17   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-17` | `ghcr.io/tommasobenatti/pterodactyl-graalvm:CE-17` | (Not available at the moment)   |
-| 19   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-19` | `ghcr.io/tommasobenatti/pterodactyl-graalvm:CE-19` | ❌                             |
-| 20   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-20` |                                                    | ❌                             |
-| 21   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-21` |                                                    | ❌                             |
-| 22   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-22` |                                                    | ❌                             |
-| 23   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-23` |                                                    | ❌                             |
-| 24   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-24` |                                                    | ❌                             |
+| 8    | ❌                                                  | `ghcr.io/thefaik/pterodactyl-graalvm:CE-8`  | (Not available at the moment)  |
+| 11   | ❌                                                  | `ghcr.io/thefaik/pterodactyl-graalvm:CE-11` | (Not available at the moment)  |
+| 17   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-17` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-17` | (Not available at the moment)   |
+| 19   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-19` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-19` | ❌                             |
+| 20   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-20` |                                                    | ❌                             |
+| 21   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-21` |                                                    | ❌                             |
+| 22   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-22` |                                                    | ❌                             |
+| 23   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-23` |                                                    | ❌                             |
+| 24   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-24` |                                                    | ❌                             |
+| 25   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-25` |                                                    | ❌                             |
 
 ___
 
