@@ -21,6 +21,6 @@ ___
 | 24   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-24` |                                                    | ❌                             |
 | 25   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-25` |                                                    | ❌                             |
 | 25   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-26` |                                                    | 
-
+❌
 ___
 
