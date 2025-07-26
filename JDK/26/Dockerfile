@@ -6,7 +6,7 @@
   FROM debian:bookworm-slim
 
   ARG TARGETPLATFORM
-  ARG JAVA_VERSION=25
+  ARG JAVA_VERSION=26
   
   MAINTAINER TheFaik, <thefaikli@aol.com>
   
@@ -43,7 +43,7 @@
            "linux/amd64")  ARCH=x64  ;; \
            "linux/arm64")  ARCH=aarch64  ;; \
       esac \
-    && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-${JAVA_VERSION}.0.0-ea.30/graalvm-jdk-${JAVA_VERSION}.0.0-ea.30_linux-${ARCH}_bin.tar.gz\
+    && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-${JAVA_VERSION}.0.0-ea.06/graalvm-jdk-${JAVA_VERSION}.0.0-ea.06_linux-${ARCH}_bin.tar.gz\
     && mkdir -p /opt/java/graalvm \
     && tar -xf /tmp/graalvm.tar.gz -C /opt/java/graalvm --strip-components=1 \
     && rm -rf /var/lib/apt/lists/* \
