@@ -8,7 +8,7 @@
   ARG TARGETPLATFORM
   ARG JAVA_VERSION=25.0.0
 
-  LABEL maintainer="Tommaso Benatti <tommaso.benatti@outlook.com>"
+  LABEL maintainer="TheFaik <thefaikli@aol.com>"
 
   ENV DEBIAN_FRONTEND=noninteractive
   

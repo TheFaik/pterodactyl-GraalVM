@@ -3,20 +3,12 @@
 # Environment: Java
 # Minimum Panel Version: 1.7.0
 # ----------------------------------
-<<<<<<< HEAD
-  FROM debian:bookworm-slim
-=======
   FROM debian:trixie-slim
->>>>>>> e876bf812904e5846d6e40e42c8edb07f77f7547
 
   ARG TARGETPLATFORM
   ARG JAVA_VERSION=25
   
-<<<<<<< HEAD
-  MAINTAINER TheFaik, <thefaikli@aol.com>
-=======
   LABEL maintainer="TheFaik <thefaikli@aol.com>"
->>>>>>> e876bf812904e5846d6e40e42c8edb07f77f7547
   
   ENV DEBIAN_FRONTEND=noninteractive
   
@@ -37,10 +29,6 @@
         locales \
         openssl \
         procps \
-<<<<<<< HEAD
-        software-properties-common \
-=======
->>>>>>> e876bf812904e5846d6e40e42c8edb07f77f7547
         sqlite3 \
         tar \
         tzdata \
@@ -54,11 +42,7 @@
            "linux/amd64")  ARCH=x64  ;; \
            "linux/arm64")  ARCH=aarch64  ;; \
       esac \
-<<<<<<< HEAD
     && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-${JAVA_VERSION}e1-${JAVA_VERSION}.0.0-ea.01/graalvm-jdk-${JAVA_VERSION}e1-${JAVA_VERSION}.0.0-ea.01_linux-${ARCH}_bin.tar.gz\
-=======
-    && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://download.oracle.com/graalvm/${JAVA_VERSION}/latest/graalvm-jdk-${JAVA_VERSION}_linux-${ARCH}_bin.tar.gz \
->>>>>>> e876bf812904e5846d6e40e42c8edb07f77f7547
     && mkdir -p /opt/java/graalvm \
     && tar -xf /tmp/graalvm.tar.gz -C /opt/java/graalvm --strip-components=1 \
     && rm -rf /var/lib/apt/lists/* \
@@ -78,8 +62,4 @@
   COPY        ./../entrypoint.sh /entrypoint.sh
   
   CMD         ["/bin/bash", "/entrypoint.sh"]
-<<<<<<< HEAD
-  
-=======
->>>>>>> e876bf812904e5846d6e40e42c8edb07f77f7547
   

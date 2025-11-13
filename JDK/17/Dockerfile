@@ -9,7 +9,7 @@
   ARG JAVA_VERSION=17
   ARG GRAAL_JDK_VERSION=17.0.12
   
-  LABEL maintainer="Tommaso Benatti <tommaso.benatti@outlook.com>"
+  LABEL maintainer="TheFaik <thefaikli@aol.com>"
   
   ENV DEBIAN_FRONTEND=noninteractive
   

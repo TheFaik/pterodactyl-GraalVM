@@ -9,38 +9,6 @@ It is ideal for **microservices**, **high-load applications**, and **Minecraft s
 ---
 
 ## 🔧 Build Types
-<<<<<<< HEAD
-
-- **JDK (Oracle GraalVM JDK)**  
-  Based on **Oracle JDK**, distributed under [GraalVM Free Terms and Conditions](https://www.oracle.com/downloads/licenses/graal-free-license.html).  
-  Includes additional features for **Native Image** (AOT).
-
-- **CE (Community Edition)**  
-  Based on **OpenJDK**, licensed under **GPLv2 + Classpath Exception**.  
-  Fully open-source and ideal for production Minecraft servers running with **JIT**.
-
-- **EE (Enterprise Edition)**  
-  Not available in these builds. Provides enterprise-level optimizations (mainly for Native Image, not relevant for JIT Minecraft servers).
-
----
-## Docker Container Configuration
-
-| Java | JDK                                        	     | Community Edition (CE)                             | Enterprise Edition (EE)         |
-|------|-----------------------------------------------------|----------------------------------------------------|---------------------------------|
-| 8    | ❌                                                  | `ghcr.io/thefaik/pterodactyl-graalvm:CE-8`  | (Not available at the moment)  |
-| 11   | ❌                                                  | `ghcr.io/thefaik/pterodactyl-graalvm:CE-11` | (Not available at the moment)  |
-| 17   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-17` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-17` | (Not available at the moment)   |
-| 19   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-19` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-19` | ❌                             |
-| 20   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-20` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-20` | ❌                             |
-| 21   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-21` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-21` | ❌                             |
-| 22   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-22` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-22` | ❌                             |
-| 23   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-23` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-23` | ❌                             |
-| 24   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-24` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-24` | ❌                             |
-| 25   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-25` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-25` | ❌                             |
-| 26   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-26` |                                                    | ❌
-___
-
-=======
 
 - **JDK (Oracle GraalVM JDK)**  
   Based on **Oracle JDK**, distributed under [GraalVM Free Terms and Conditions](https://www.oracle.com/downloads/licenses/graal-free-license.html).  
@@ -59,16 +27,16 @@ ___
 
 | Java | JDK (Oracle GraalVM)                             | CE (Community Edition)                              | EE (Enterprise Edition) |
 |------|--------------------------------------------------|-----------------------------------------------------|--------------------------|
-| 8    | ❌                                                  | `ghcr.io/thefaik/pterodactyl-graalvm:CE-8`  | ❌                             |
-| 11   | ❌                                                  | `ghcr.io/thefaik/pterodactyl-graalvm:CE-11` | ❌                             |
-| 17   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-17` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-17` | ❌                             |
-| 19   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-19` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-19` | ❌                             |
-| 20   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-20` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-20` | ❌                             |
-| 21   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-21` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-21` | ❌                             |
-| 22   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-22` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-22` | ❌                             |
-| 23   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-23` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-23` | ❌                             |
-| 24   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-24` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-24` | ❌                             |
-| 25   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-25` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-25` | ❌                             |
+| 8    | ❌                                               | `ghcr.io/thefaik/pterodactyl-graalvm:CE-8`   | ❌                      |
+| 11   | ❌                                               | `ghcr.io/thefaik/pterodactyl-graalvm:CE-11`  | ❌                      |
+| 17   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-17` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-17` | ❌                      |
+| 19   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-19` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-19` | ❌                      |
+| 20   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-20` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-20` | ❌                      |
+| 21   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-21` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-21` | ❌                      |
+| 22   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-22` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-22` | ❌                      |
+| 23   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-23` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-23` | ❌                      |
+| 24   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-24` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-24` | ❌                      |
+| 25   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-25` | `ghcr.io/thefaik/pterodactyl-graalvm:CE-25` | ❌                      |
 | 26   | `ghcr.io/thefaik/pterodactyl-graalvm:JDK-26` |                                                    | ❌
 
 ---
@@ -90,5 +58,5 @@ ___
 To run with the Graal just-in-time compiler, add the following flags:
 
 ```bash
+<<<<<<< HEAD
 -XX:+UnlockExperimentalVMOptions -XX:+UseGraalJIT
->>>>>>> e876bf812904e5846d6e40e42c8edb07f77f7547
