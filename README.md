@@ -2,10 +2,26 @@
 ![build graalvm](https://github.com/thefaik/pterodactyl-graalvm/actions/workflows/docker-image.yml/badge.svg)
 ![license mit](https://img.shields.io/badge/license-MIT-green)
 
-GraalVM is a high-performance runtime that provides significant improvements in application performance and efficiency which is ideal for microservices. https://www.graalvm.org/
+**GraalVM** is a high-performance JDK that provides significant improvements in application performance and efficiency.  
+It is ideal for **microservices**, **high-load applications**, and **Minecraft servers**.  
+➡️ [Official GraalVM website](https://www.graalvm.org/)
 
-___
+---
 
+## 🔧 Build Types
+
+- **JDK (Oracle GraalVM JDK)**  
+  Based on **Oracle JDK**, distributed under [GraalVM Free Terms and Conditions](https://www.oracle.com/downloads/licenses/graal-free-license.html).  
+  Includes additional features for **Native Image** (AOT).
+
+- **CE (Community Edition)**  
+  Based on **OpenJDK**, licensed under **GPLv2 + Classpath Exception**.  
+  Fully open-source and ideal for production Minecraft servers running with **JIT**.
+
+- **EE (Enterprise Edition)**  
+  Not available in these builds. Provides enterprise-level optimizations (mainly for Native Image, not relevant for JIT Minecraft servers).
+
+---
 ## Docker Container Configuration
 
 | Java | JDK                                        	     | Community Edition (CE)                             | Enterprise Edition (EE)         |
