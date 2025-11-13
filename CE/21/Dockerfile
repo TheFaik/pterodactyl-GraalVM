@@ -6,10 +6,10 @@
   FROM debian:trixie-slim
 
   ARG TARGETPLATFORM
-  ARG JAVA_VERSION=24
-  
+  ARG JAVA_VERSION=21.0.2
+
   LABEL maintainer="Tommaso Benatti <tommaso.benatti@outlook.com>"
-  
+
   ENV DEBIAN_FRONTEND=noninteractive
   
   # Default to UTF-8 file.encoding
@@ -42,9 +42,11 @@
            "linux/amd64")  ARCH=x64  ;; \
            "linux/arm64")  ARCH=aarch64  ;; \
       esac \
-    && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://download.oracle.com/graalvm/${JAVA_VERSION}/latest/graalvm-jdk-${JAVA_VERSION}_linux-${ARCH}_bin.tar.gz \
+    && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-${JAVA_VERSION}/graalvm-community-jdk-${JAVA_VERSION}_linux-${ARCH}_bin.tar.gz \
     && mkdir -p /opt/java/graalvm \
-    && tar -xf /tmp/graalvm.tar.gz -C /opt/java/graalvm --strip-components=1 \
+    && cd /opt/java/graalvm \
+    && tar -xf /tmp/graalvm.tar.gz --strip-components=1 \
+    && export PATH="/opt/java/graalvm/bin:$PATH" \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /tmp/graalvm.tar.gz
   
