@@ -8,7 +8,7 @@
   ARG TARGETPLATFORM
   ARG JAVA_VERSION=26
   
-  MAINTAINER TheFaik, <thefaikli@aol.com>
+  LABEL maintainer="TheFaik <thefaikli@aol.com>"
   
   ENV DEBIAN_FRONTEND=noninteractive
   
