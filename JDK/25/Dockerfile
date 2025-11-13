@@ -43,7 +43,7 @@
            "linux/amd64")  ARCH=x64  ;; \
            "linux/arm64")  ARCH=aarch64  ;; \
       esac \
-    && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-${JAVA_VERSION}.0.0-ea.30/graalvm-jdk-${JAVA_VERSION}.0.0-ea.30_linux-${ARCH}_bin.tar.gz\
+    && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-${JAVA_VERSION}e1-${JAVA_VERSION}.0.0-ea.01/graalvm-jdk-${JAVA_VERSION}e1-${JAVA_VERSION}.0.0-ea.01_linux-${ARCH}_bin.tar.gz\
     && mkdir -p /opt/java/graalvm \
     && tar -xf /tmp/graalvm.tar.gz -C /opt/java/graalvm --strip-components=1 \
     && rm -rf /var/lib/apt/lists/* \
