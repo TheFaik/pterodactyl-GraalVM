@@ -63,4 +63,3 @@
   
   CMD         ["/bin/bash", "/entrypoint.sh"]
   
-  
