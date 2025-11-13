@@ -58,5 +58,4 @@ It is ideal for **microservices**, **high-load applications**, and **Minecraft s
 To run with the Graal just-in-time compiler, add the following flags:
 
 ```bash
-<<<<<<< HEAD
 -XX:+UnlockExperimentalVMOptions -XX:+UseGraalJIT
